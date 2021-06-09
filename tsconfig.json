@@ -10,14 +10,15 @@
     "baseUrl": "src",
     "allowJs": true,
     "skipLibCheck": true,
-    "allowSynthenticDefaultImports": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    },
+  },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": []
 }
