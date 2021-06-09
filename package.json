@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AgmarTorres/react-clean-code/issues"
   },
-  "homepage": "https://github.com/AgmarTorres/react-clean-code#readme"
+  "homepage": "https://github.com/AgmarTorres/react-clean-code#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.1.0"
+  }
 }
