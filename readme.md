@@ -19,5 +19,6 @@ npm i -D lint-staged husky
     "pre-commit": "lint-staged"
   }
 }
-
 npm i -D jest @types/jest ts-jest
+
+Tc
