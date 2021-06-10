@@ -1,4 +1,5 @@
 import { HttpPostClient } from '@/data/protocols/http/http-post-client'
+import { HttpPostClientSpy } from '../../tests/mock-http-client'
 
 class RemoteAuthentication {
   constructor (private readonly url: string, private readonly httpPostClient: HttpPostClient) {}
@@ -12,13 +13,6 @@ describe('RemoteAuthentication', () => {
     // Quero saber quando eu chamar ele
     // Sistem Under Test
     // Spy: Coloca valor fake, ou compara valore
-    class HttpPostClientSpy implements HttpPostClient {
-      url?: string
-      async post (url: string): Promise<void> {
-        this.url = url
-        return Promise.resolve()
-      }
-    }
 
     const url = 'any_url'
     const httpPostClientSpy = new HttpPostClientSpy()
