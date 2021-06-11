@@ -33,3 +33,5 @@ jest.config.js
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1'
   }
+
+jest --clearCache
