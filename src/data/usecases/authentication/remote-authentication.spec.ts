@@ -1,7 +1,7 @@
 import { HttpPostClient } from '@/data/protocols/http/http-post-client'
-import { HttpPostClientSpy } from '../../tests/mock-http-client'
-import { mockAuthentication } from '../../../domain/test/mock-authentication'
-import { AuthenticationParams } from '../../../domain/usecases/authentication'
+import { HttpPostClientSpy } from '@/data/tests/mock-http-client'
+import { mockAuthentication } from '@/domain/test/mock-authentication'
+import { AuthenticationParams } from '@/domain/usecases/authentication'
 import faker from 'faker'
 
 type SutTypes = {

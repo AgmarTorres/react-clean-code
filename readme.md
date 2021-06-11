@@ -22,3 +22,14 @@ npm i -D lint-staged husky
 npm i -D jest @types/jest ts-jest
 
 npm i -D faker @types/faker
+
+Adicionando paths 2. 3 testando casos de erro
+  "baseUrl": "src",
+  "paths": {
+    "@/*": ["*"]
+  },
+
+jest.config.js
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1'
+  }
