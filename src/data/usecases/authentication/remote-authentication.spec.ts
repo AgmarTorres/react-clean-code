@@ -15,7 +15,7 @@ const makeSut = (url = faker.internet.url()): SutTypes => {
 class RemoteAuthentication {
   constructor (private readonly url: string, private readonly httpPostClient: HttpPostClient) {}
   async auth (): Promise<void> {
-    await this.httpPostClient.post(this.url)
+    await this.httpPostClient.post({ url: this.url })
   }
 }
 
