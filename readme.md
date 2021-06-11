@@ -21,4 +21,4 @@ npm i -D lint-staged husky
 }
 npm i -D jest @types/jest ts-jest
 
-Tc
+npm i -D faker @types/faker
