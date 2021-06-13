@@ -7,6 +7,8 @@ npm i -D eslint eslint-config-standard-with-typescript@11 eslint-plugin-import e
 
 #Evitar commits defeituosos
 npm i -D lint-staged husky
+npm install -D husky@4
+
 .lintstagedrc
 { #Arquivos modificados, vou colocar script, antes de fazer o commit
 "\*.{ts,tsx}": [
