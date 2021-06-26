@@ -41,3 +41,9 @@ jest --clearCache
 npm i axios
 
 npm i @types/axios -D
+
+
+.lintstagedrc.json
+  {
+    "*.{ts,tsx}": ["eslint 'src/**' --fix", "npm run test:staged"]
+  }
