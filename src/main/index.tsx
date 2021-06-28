@@ -1,11 +1,5 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Login from '@/presetation/pages/login/login'
 
-function Index (): ReactNode {
-  return (
-    <div>
-
-    </div>
-  )
-}
-
-export default Index
+ReactDOM.render(<Login />, document.getElementById('main'))

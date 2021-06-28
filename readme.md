@@ -128,3 +128,6 @@ jest.config.json
 .eslintigonore
   
   *.scss
+
+
+  loading.io/css

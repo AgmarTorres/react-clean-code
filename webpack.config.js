@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: { // extensões para dar suporte
-    extensionas: ['.ts', '.tsx', '.js', '.scss'],
+    extensions: ['.ts', '.tsx', '.js', '.scss'],
     alias: { // Mapear os @ feitos pelo tsconfig
       '@': path.join(__dirname, 'src')
     }
