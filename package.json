@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "react-code",
   "version": "1.0.0",
   "description": "npm i -D git-commit-msg-linter",
   "main": "index.js",
@@ -42,6 +42,10 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

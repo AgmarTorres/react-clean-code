@@ -47,3 +47,19 @@ npm i @types/axios -D
   {
     "*.{ts,tsx}": ["eslint 'src/**' --fix", "npm run test:staged"]
   }
+
+npm i react react-dom
+
+npm i @types/react @types/react-dom
+
+
+
+
+
+
+
+
+
+
+
+
