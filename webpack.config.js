@@ -9,10 +9,28 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: { // extensões para dar suporte
-    extensionas: ['.ts', '.tsx', '.js'],
+    extensionas: ['.ts', '.tsx', '.js', '.scss'],
     alias: { // Mapear os @ feitos pelo tsconfig
       '@': path.join(__dirname, 'src')
     }
+  },
+  module: {
+    rules: [{
+      test: /\.ts(x?)$/,
+      loader: 'ts-loader',
+      exclude: /node_modules/
+    }, {
+      test: /\.scss$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader',
+        options: { modules: true } // react consegue entender que ele será um modulo, para manipular com js
+      },
+      {
+        loader: 'sass-loader'
+      }]
+    }]
   },
   devServer: {
     contentBase: './public',

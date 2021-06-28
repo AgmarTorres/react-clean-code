@@ -80,3 +80,51 @@ npm i -D clean-webpack-plugin
     "start": "webpack-dev-server --open"    --open abre o browser
     
     "test": "jest --passWithNoTests --no-cache --runInBand",    resetar o cache, testes en sequencia
+
+npm i -D node-sass sass-loader css-loader style-loader ts-loader
+
+  config scss
+
+  extensionas: ['.ts', '.tsx', '.js', '.scss'],
+  module: {
+    rules: [{
+      test: /\.ts(x?)$/,
+      loader: 'ts-loader',
+      exclude: /node_modules/
+    }, {
+      test: /\.scss$/,
+      use: [{
+        loader: 'style-loader'
+      }, {
+        loader: 'css-loader',
+        options: { modules: true } // react consegue entender que ele será um modulo, para manipular com js
+      },
+      {
+        loader: 'sass-loader',
+      }]
+    }]
+  },
+
+  sass-module.d.ts
+    declare module '*.scss' {
+      const content: { [ className: string]: string}
+      export = content
+    }
+
+
+npm i -D identity-obj-proxy
+
+
+jest.config.json
+
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1',
+    '\\.scss$': 'identity-obj-proxy' // usa um test double, stub, fake, spy, dummy {}, gera um dummy ( objeto vazio )
+  }
+
+    collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx}',
+    '!**/*.d.ts'], // ignorar o .d.ts
+
+.eslintigonore
+  
+  *.scss
