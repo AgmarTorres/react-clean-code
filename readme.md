@@ -67,12 +67,7 @@ eslintrc.json
   
     "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "off",
+    
 
-
-
-
-
-
-
-
+# Webpack
 
