@@ -69,7 +69,7 @@ eslintrc.json
     "react/jsx-uses-vars": "off",
     
 
-# Webpack
+# 3.3 Webpack
 npm i -D webpack webpack-cli webpack-dev-server
 
   data => tem dependencia de protocolo, que tem interface de outra camada
