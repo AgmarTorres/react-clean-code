@@ -70,4 +70,13 @@ eslintrc.json
     
 
 # Webpack
+npm i -D webpack webpack-cli webpack-dev-server
 
+  data => tem dependencia de protocolo, que tem interface de outra camada
+
+npm i -D clean-webpack-plugin
+
+
+    "start": "webpack-dev-server --open"    --open abre o browser
+    
+    "test": "jest --passWithNoTests --no-cache --runInBand",    resetar o cache, testes en sequencia
