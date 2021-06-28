@@ -52,8 +52,21 @@ npm i react react-dom
 
 npm i @types/react @types/react-dom
 
+jest.config.json
+  transform: {
+    '.+\\.(ts|tsx)$': 'ts-jest'
+  },
 
+eslintrc.json
 
+  "settings": {"react": {"version": "detect"}},
+  "extends": ["standard-with-typescript", "plugin:react/recommended"],
+  "plugins": ["react"],
+  
+  rules
+  
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
 
 
 
