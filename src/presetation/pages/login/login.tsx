@@ -1,9 +1,6 @@
 import React, { memo } from 'react'
 import Styles from './login-styles.scss'
-import LoginHeader from '@/presetation/components/login-header/login-header'
-import Footer from '@/presetation/components/footer/footer'
-import Input from '@/presetation/components/input/input'
-import FormStatus from './../../components/form-status/form-status'
+import { Footer, Input, LoginHeader, FormStatus } from '@/presetation/components'
 
 const Login: React.FC = () => {
   return (
