@@ -131,3 +131,18 @@ jest.config.json
 
 
   loading.io/css
+
+  ---
+
+
+4.6 router
+  npm i react-router-dom
+  npm i -D  @types/react-router-dom
+---
+4.7 
+
+  npm i -D @testing-library/react
+
+  Caso não funcione instalar o 
+  "identity-obj-proxy": "^3.0.0",
+    
