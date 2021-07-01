@@ -9,10 +9,11 @@ type LoginProps ={
 }
 
 const Login: React.FC<LoginProps> = ({ validation }: LoginProps) => {
-  const [state, setState] = useState({ isLoading: false, emailError: 'Campo obrigatório', passwordError: 'Campo obrigatório', mainError: '', email: '', password: '' })
+  const [state, setState] = useState({ isLoading: false, emailError: '', passwordError: '', mainError: '', email: '', password: '' })
 
-  useEffect(() => { setState({ ...state, emailError: validation.validade('email', state.email) }) }, [state.email])
-  useEffect(() => { validation.validade('password', state.password) }, [state.password])
+  useEffect(() => {
+    setState({ ...state, emailError: validation.validade('email', state.email), passwordError: validation.validade('password', state.password) })
+  }, [state.email, state.password])
 
   return (
     <div className={Styles.login}>
