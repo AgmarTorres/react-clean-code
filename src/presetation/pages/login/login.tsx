@@ -2,7 +2,7 @@ import React, { useState, memo, useEffect } from 'react'
 import Styles from './login-styles.scss'
 import { Footer, Input, LoginHeader, FormStatus } from '@/presetation/components'
 import Context from '@/presetation/context/form/form-context'
-import { Validation } from './../../validation'
+import { Validation } from '../../validation'
 
 type LoginProps ={
   validation: Validation
@@ -11,8 +11,8 @@ type LoginProps ={
 const Login: React.FC<LoginProps> = ({ validation }: LoginProps) => {
   const [state, setState] = useState({ isLoading: false, emailError: 'Campo obrigatório', passwordError: 'Campo obrigatório', mainError: '', email: '', password: '' })
 
-  useEffect(() => { validation.validade({ email: state.email }) }, [state.email])
-  useEffect(() => { validation.validade({ password: state.password }) }, [state.password])
+  useEffect(() => { validation.validade('email', state.email) }, [state.email])
+  useEffect(() => { validation.validade('password', state.password) }, [state.password])
 
   return (
     <div className={Styles.login}>
