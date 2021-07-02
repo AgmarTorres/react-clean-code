@@ -146,3 +146,7 @@ jest.config.json
   Caso não funcione instalar o 
   "identity-obj-proxy": "^3.0.0",
     
+
+    ---
+
+    npm i -D jest-localstorage-mock
