@@ -4,7 +4,7 @@ type Props = React.HTMLAttributes<HTMLElement>
 
 const Spinner = (props: Props): React.ReactElement<any, any> => {
   return (
-    <div {...props} className={[Styles.spinner, props.className].join(' ')}><div></div><div></div><div></div><div></div></div>
+    <div {...props} data-testid='spinner' className={[Styles.spinner, props.className].join(' ')}><div></div><div></div><div></div><div></div></div>
   )
 }
 
