@@ -1,1 +1,2 @@
-export * as MockValidation from './mock-validation'
+export * from './mock-validation'
+export * from './mock-authentication'
