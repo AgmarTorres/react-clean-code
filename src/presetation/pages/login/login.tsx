@@ -3,21 +3,24 @@ import Styles from './login-styles.scss'
 import { Footer, Input, LoginHeader, FormStatus } from '@/presetation/components'
 import Context from '@/presetation/context/form/form-context'
 import { Validation } from '../../protocols/validation'
+import { Authentication } from '@/domain/usecases'
 
 type LoginProps ={
   validation: Validation
+  authentication: Authentication
 }
 
-const Login: React.FC<LoginProps> = ({ validation }: LoginProps) => {
+const Login: React.FC<LoginProps> = ({ validation, authentication }: LoginProps) => {
   const [state, setState] = useState({ isLoading: false, emailError: '', passwordError: '', mainError: '', email: '', password: '' })
 
   useEffect(() => {
     setState({ ...state, emailError: validation.validade('email', state.email), passwordError: validation.validade('password', state.password) })
   }, [state.email, state.password])
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>): Promise< void > => {
     event.preventDefault()
     setState({ ...state, isLoading: true })
+    await authentication.auth({ email: state.email, password: state.password })
   }
 
   return (
