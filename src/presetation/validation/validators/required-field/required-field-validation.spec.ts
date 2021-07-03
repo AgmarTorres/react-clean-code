@@ -1,9 +1,9 @@
 
-import { RequiredFieldError } from '../errors'
+import { RequiredFieldError } from '../../errors'
 import { RequiredFieldValidation } from './required-field-validation'
 import faker from 'faker'
 
-const makeSut = (): RequiredFieldValidation => new RequiredFieldValidation('email')
+const makeSut = (): RequiredFieldValidation => new RequiredFieldValidation(faker.random.word())
 
 describe('Required Field Validation', () => {
   test('should return error if field is empty ', () => {
