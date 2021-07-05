@@ -154,3 +154,7 @@ jest.config.json
 -- 6 - Aula 1
     mango@gmail.com
     12345
+
+jest.config.js
+  Ignorar pasta main
+    '!<rootDir>/src/main/**/*.{ts,tsx}',

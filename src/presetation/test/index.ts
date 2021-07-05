@@ -1,2 +1,2 @@
-export * from './mock-validation'
-export * from './mock-authentication'
+export { default as MockValidation } from './mock-validation'
+export { default as MockAuthentication } from './mock-authentication'

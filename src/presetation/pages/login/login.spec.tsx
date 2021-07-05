@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from './login'
+import { Login } from '@/presetation/pages'
 import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
 import { cleanup, fireEvent, render, RenderResult, waitFor } from '@testing-library/react'
