@@ -7,7 +7,7 @@ const makeSut = (): MinLengthValidation => new MinLengthValidation(faker.databas
 describe('MinLengthValidation', () => {
   test('Should return error if value is invalid ', () => {
     const sut = makeSut()
-    const error = sut.validate(faker.random.alphaNumeric(6))
+    const error = sut.validate(faker.random.alphaNumeric(4))
     expect(error).toEqual(new InvalidFieldError())
   })
 

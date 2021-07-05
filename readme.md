@@ -150,3 +150,7 @@ jest.config.json
     ---
 
     npm i -D jest-localstorage-mock
+
+-- 6 - Aula 1
+    mango@gmail.com
+    12345
