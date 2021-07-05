@@ -158,3 +158,9 @@ jest.config.json
 jest.config.js
   Ignorar pasta main
     '!<rootDir>/src/main/**/*.{ts,tsx}',
+
+
+  6.5 Deploy
+    webpack
+      
+    const { DefinePlugin } = require('webpack')
