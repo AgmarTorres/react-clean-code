@@ -185,3 +185,5 @@ jest.config.js
     "quotes": "off"
 
   .travis
+
+  git tag -a '1.1.0' -m '1.1.0'
