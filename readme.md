@@ -184,6 +184,14 @@ jest.config.js
     "react/jsx-uses-vars": "off",
     "quotes": "off"
 
-  .travis
 
   git tag -a '1.1.0' -m '1.1.0'
+
+  .travis
+    language: node_js
+    node_js:
+      - 12
+    script:
+      - eslint 'src/**'
+      - npm run test:ci
+      
