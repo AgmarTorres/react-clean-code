@@ -1,6 +1,7 @@
-language: node_js,
-node_js: 
+language: node_js
+node_js:
   - 12
 script:
-  - eslint 'src/**'  
+  - eslint 'src/**'
   - npm run test:ci
+  
