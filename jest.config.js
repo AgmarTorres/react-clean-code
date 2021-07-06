@@ -9,7 +9,7 @@ module.exports = {
     '!<rootDir>/src/**/index.ts',
     '!**/*.d.ts'
   ],
-  coverageDirectory: 'coverage',
+  coverageDirectory: "./coverage/",
   testEnvironment: 'jsdom',
   transform: {
     '.+\\.(ts|tsx)$': 'ts-jest'
