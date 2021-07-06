@@ -5,6 +5,7 @@ module.exports = {
     '!<rootDir>/src/main/**/*.{ts,tsx}',
     '!<rootDir>/src/presetation/components/router/**/*.{ts,tsx}',
     '!<rootDir>/src/domain/**/*.{ts,tsx}',
+    '!<rootDir>/src/**/index.ts',
     '!**/*.d.ts'],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
