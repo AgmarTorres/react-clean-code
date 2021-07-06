@@ -183,3 +183,5 @@ jest.config.js
     "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "off",
     "quotes": "off"
+
+  .travis
