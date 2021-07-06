@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/AgmarTorres/react-clean-code.svg?branch=main)](https://travis-ci.com/AgmarTorres/react-clean-code)
+
 npm i -D git-commit-msg-linter
 npm i -D typescript @types/node
 npm i -D eslint eslint-config-standard-with-typescript@11 eslint-plugin-import eslint-plugin-promise eslint-plugin-standard @typescript-eslint/eslint-plugin eslint-plugin-node eslint-plugin-react
