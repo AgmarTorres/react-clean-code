@@ -7,5 +7,5 @@ export type HttpPostParams<T> ={
 
 // tipo do body dos parametros, e tipo do body da resposta
 export interface HttpPostClient<T, R> {
-  post(params: HttpPostParams<T>): Promise<HttpResponse<R>>
+  post: (params: HttpPostParams<T>) => Promise<HttpResponse<R>>
 }

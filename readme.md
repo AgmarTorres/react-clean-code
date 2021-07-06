@@ -159,8 +159,27 @@ jest.config.js
   Ignorar pasta main
     '!<rootDir>/src/main/**/*.{ts,tsx}',
 
-
   6.5 Deploy
     webpack
       
     const { DefinePlugin } = require('webpack')
+
+7. Coverage e TravisCI
+  npm i -g npm-check
+  npx npm-check
+  npm-check -u -s
+
+  .eslintrc.json
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/comma-spacing": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "no-redeclare": "off",
+    "import/export": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
+    "quotes": "off"
