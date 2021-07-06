@@ -3,9 +3,11 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/main/**/*.{ts,tsx}',
-    '!<rootDir>/src/presetation/components/router/**/*.{ts,tsx}',
+    '!<rootDir>/src/presentation/components/router/**/*.{ts,tsx}',
     '!<rootDir>/src/domain/**/*.{ts,tsx}',
-    '!**/*.d.ts'],
+    '!**/*.d.ts',
+    '!<rootDir>/src/presentation/test/**/*.{ts,tsx}',
+    '!<rootDir>/src/presentation/components/index.{ts,tsx}'],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
   transform: {

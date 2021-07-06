@@ -1,7 +1,7 @@
 import React from 'react'
 import { fireEvent, render, RenderResult } from '@testing-library/react'
 import Input from './input'
-import Context from '@/presetation/context/form/form-context'
+import Context from '@/presentation/context/form/form-context'
 
 const makeSut = (): RenderResult => {
   return render(

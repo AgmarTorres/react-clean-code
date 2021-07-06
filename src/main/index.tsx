@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router } from '@/presetation/components'
+import { Router } from '@/presentation/components'
 import '@/presetation/styles/global'
 import { makeLogin } from './factories/pages/login/login-factory'
 
