@@ -11,11 +11,14 @@ module.exports = {
   ],
   coverageDirectory: "./coverage/",
   testEnvironment: 'jsdom',
-  transform: {
-    '.+\\.(ts|tsx)$': 'ts-jest'
-  },
-  moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/$1',
+  ts- jest: {
+  "isolatedModules": false
+},
+transform: {
+  '.+\\.(ts|tsx)$': 'ts-jest'
+},
+moduleNameMapper: {
+  '@/(.*)': '<rootDir>/src/$1',
     '\\.scss$': 'identity-obj-proxy' // gera um dummy ( objeto vazio )
-  }
+}
 }
